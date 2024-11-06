@@ -29,9 +29,6 @@ public class SecondTusk {
     }
 
     private static boolean isNaturalNumber(String num) {
-        for (char c : num.toCharArray()) {
-            if (c == '0') return false;
-        }
-        return Character.isDigit(num.charAt(0));
+        return Character.isDigit(num.charAt(0)) && num.charAt(0) != '0';
     }
 }

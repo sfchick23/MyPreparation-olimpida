@@ -9,12 +9,12 @@ class FirstTusk {
         if (x < 0 && y < 0){
             x = Math.abs(x);
             y = Math.abs(y);
-        }
-        if (x < 0 || y < 0){
+            System.out.println("X=" + x + " Y=" + y);
+        }else if (x < 0 || y < 0){
             x += 0.5;
             y += 0.5;
             System.out.println("X=" + x + " Y=" + y);
-        }else if (x <= 0.5 || y <= 2.0) {
+        }else if (x >= 0.5 && x <= 2.0 || y >= 0.5 && y <= 2.0 ) {
             System.out.println("X=" + x + " Y=" + y);
         }else{
             x /= 10;
